@@ -1,0 +1,9 @@
+||
+
+                <ul>
+                    { materiales.map((material => (
+                        <div><li key={material.id}>{material.name}</li>
+                        <input type="submit" className="xborrar" value="X"
+                        onClick={() => eliminarMate(material.id)}/></div>
+                    ))) }
+                </ul>
